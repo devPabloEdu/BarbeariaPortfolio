@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Frijole&family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shadows+Into+Light&display=swap');
+
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+}
+nav{
+    background-color: #d19f0a;
+    padding: 20px;
+}
+.navItens{
+    text-decoration: none;
+    padding: 30px;
+    font-size: 1.5em;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    text-shadow: #262626 2px 2px 2px;
+}
+.navItens:hover{
+    background-color: #9c7a14;
+}
+.logoInicio{
+    text-align: center;
+    background-image: url(../imagens/0c9090a5-9add-4a9f-ad31-e841d2126cb2.jpeg);
+    background-size: cover;
+    padding: 110px;
+    background-attachment: scroll;
+    background-position: center;
+}
+.invisivel{
+    opacity: 0;
+}
+.main-container{
+    background-color:#d19f0a ;
+    text-align: center;
+    padding: 50px;
+}
+.main-container h1{
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    font-style: italic;
+    padding: 30px;
+    text-shadow: #262626 2px 2px 2px;
+}
+.main-container p {
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-shadow: #262626 2px 2px 2px;
+    font-weight: bold;
+}
+.servicos-container{
+    background-color: #262626;
+    text-align: center;
+    color: #F2CB05;
+    padding: 30px;
+}
+.servicos-container h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 6em;
+    padding: 10px;
+}
+.servicos-container p {
+    font-size: 1.5em;
+    line-height: 3em;
+    font-weight: bold;
+    padding: 20px;
+    font-family: "Frijole", system-ui;
+    margin: 10px;
+    border: solid #F2B705;
+    border-radius: 10px;
+}
+.servicos-container p:hover{
+    background-color: #ffc109;
+    color: white;
+    text-shadow: #262626 2px 2px 2px;
+}
+.links-container{
+    background-color: #262626;
+    text-align: center;
+    padding: 20px;
+}
+.links-container h2{
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 6em;
+    padding: 10px;
+    color: #F2CB05;
+}
+.links-container p {
+    font-size: 2em;
+    line-height: 2em;
+    padding: 20px;
+    font-family: "New Amsterdam", sans-serif;
+    color: #F2CB05;
+}
+.imagemCadeira{
+    border: solid #F2B705;
+    background-color: #F2B705;
+    border-radius: 50%;
+    width: 500px;
+    padding: 20px;
+}
+.imagemCadeira:hover{
+    border: solid #9c7a14;
+    background-color: #9c7a14;
+    padding-right: 5px;
+}
+footer{
+    background-color: #F2B705;
+    color: white;
+    text-shadow: #262626 2px 2px 2px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
