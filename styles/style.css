@@ -14,19 +14,19 @@
 }
 nav{
     background-color: #d19f0a;
-    padding: 20px;
+    padding: 10px;
 }
 .navItens{
     text-decoration: none;
-    padding: 30px;
-    font-size: 1.5em;
+    padding: 20px;
+    font-size: 1em;
     color: white;
-    font-family: "Dancing Script", cursive;
     font-weight: bold;
-    text-shadow: #262626 2px 2px 2px;
+
 }
 .navItens:hover{
     background-color: #9c7a14;
+    text-decoration: underline;
 }
 .logoInicio{
     text-align: center;
@@ -117,11 +117,96 @@ nav{
     background-color: #9c7a14;
     padding-right: 5px;
 }
-footer{
+.RedesSociais-container{
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
     background-color: #F2B705;
     color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2em;
+    line-height: 2em;
+    text-shadow: #262626 2px 2px 2px;
+}
+footer{
+    background-color: #262626;
+    color: #F2CB05;
     text-shadow: #262626 2px 2px 2px;
     text-align: center;
     font-size: 1.5em;
     padding: 10px;
+}
+
+.Modelos{
+    background-color: #262626;
+    display: flex;
+}
+.textoCarrosel{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+.textoCarrosel h3{
+    padding: 40px;
+    font-family: "Dancing Script", cursive;
+    color: #ffc109;
+    font-size: 5.5em;
+}
+.textoCarrosel hr{
+    color: #ffc109;
+}
+.textoCarrosel p{
+    padding: 10px;
+    line-height: 40px;
+    font-size: 2em;
+    color: #F2B705;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 515px;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo das imagens */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Esconde botões quando não estão em uso */
+.prev:disabled, .next:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }

@@ -11,10 +11,10 @@
     <header>
         <nav>
             <img src="" alt="" srcset="">
-            <a href="" class="navItens">QUEM SOMOS</a>
-            <a href=""class="navItens">AGENDAR HORARIO</a>
-            <a href=""class="navItens">SERVIÇOS</a>
-            <a href=""class="navItens">CONTATOS</a>
+            <a href="#quemsomos" class="navItens">QUEM SOMOS</a>
+            <a href="#servicos"class="navItens">SERVIÇOS</a>
+            <a href="#agendarhorario"class="navItens">AGENDAR HORARIO</a>
+            <a href="#contatos"class="navItens">CONTATOS</a>
         </nav>
     </header>
 
@@ -24,14 +24,14 @@
             <img src="imagens/0c9090a5-9add-4a9f-ad31-e841d2126cb2.jpeg" alt="" srcset="" class="invisivel">
         </section>
 
-        <section class="main-container">
+        <section class="main-container" id="quemsomos">
             <h1>Sobre a Lukas Barber - Barbearia Delivery </h1>
             <hr>
             <p>Desde 2010, a Barbearia Andrade Delivery, criada por Lucas Andrade, <br> é o lugar onde o cliente encontra sua autoestima e beleza. <br>✂️</p>
             <p>Nós levamos a barbearia até você, proporcionando mais conforto e agilidade ao atender na sua casa. <br>Oferecemos preços justos, que cabem no seu bolso, sem a necessidade de pegar fila ou esperar pelo próximo.</p>
         </section>
 
-        <section class="servicos-container">
+        <section class="servicos-container" id="servicos">
             <h2>Nossos Serviços</h2>
             <p>CORTE DE CABELO - R$ 45,00</p>
             <p>BARBA - R$ 15,00</p>
@@ -39,13 +39,39 @@
             <p>SONBRANCELHA (NA NAVALHA) - R$10,00</p>
         </section>
 
-        <section class="links-container">
+        <section class="Modelos">
+            <div class="textoCarrosel">
+                <h3>Alguns de nossos trabalhos</h3>
+                <hr>
+                <p>Mais do que um corte, nosso compromisso é com o seu estilo e bem-estar. <br> Cada sessão é acompanhada de uma consultoria de estilo, <br>onde discutimos o melhor corte para o seu formato de rosto, tipo de cabelo <br>e estilo de vida. Além disso, oferecemos dicas de cuidados diários <br> para que você mantenha o visual impecável até a próxima visita.</p>
+            </div>
+
+            <div class="carousel">
+                <div class="slides">
+                    <img src="imagens/cortes/1_resized.jpg" alt="Imagem 1">
+                    <img src="imagens/cortes/2_resized_resized.jpg" alt="Imagem 2">
+                    <img src="imagens/cortes/3_resized_resized.jpeg" alt="Imagem 3">
+                    <img src="imagens/cortes/4_resized.jpg" alt="Imagem 4">
+                </div>
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+
+        <section class="links-container" id="agendarhorario">
 
             <h2>AGENDE SEU HORARIO</h2>
             <p>Clique no ícone da cadeira abaixo <br> para se cadastrar em nossa agenda de atendimentos. <br> É simples e prático!</p>
             <a target="_blank" href="https://cliente.barbeiroagenda.com.br/barbearia/barbearia-andrade-/agendar?redirect=true"><img src="imagens/cadeira.png" alt="" srcset="" class="imagemCadeira"></a>
 
             <p>Entre em contato via Whatsapp ( 1 1 ) 9 5 8 9 0 -9 2 2 6</p>
+        </section>
+
+        <section class="RedesSociais-container" id="contatos">
+               <p>Nos siga em nosso Instagram</p>
+               <a href="https://www.instagram.com/barbe.ariaandrades?igsh=eHB0NWtldXhpbXNz&utm_source=qr" target="_blank"><img src="imagens/instaLogo.png" alt="" width="300px" srcset=""></a>
+               <p>Entre em nosso Grupo de clientes para ficar por dentro de todas novidades e atualizações de nossa agenda.</p>
+               <a href="https://chat.whatsapp.com/LGbOYkidhcR6ptBabABjcX" target="_blank"><img src="imagens/WhatsApp-Logo.png" alt="" width="400px"></a>
         </section>
 
     </main>
@@ -55,5 +81,7 @@
         <p>Desenvolvido por Pablo Eduardo &copy;</p>
 
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
