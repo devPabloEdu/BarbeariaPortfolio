@@ -23,7 +23,7 @@ app.post('/send-email', (req, res) => {
 
     const mailOptions = {
         from: 'agendamentosbarbearia48@gmail.com',
-        to: 'eduardopablo460@gmail.com',
+        to: 'lucassilvaandrade032425@gmail.com',
         subject: 'Agendamento',
         text: `Nome: ${name}\nTelefone: ${phone}\nData do Agendamento: ${date}\nHorário do Agendamento: ${time}\nEndereço: ${endereco}`
     };
