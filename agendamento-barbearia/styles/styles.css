@@ -1,0 +1,72 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Frijole&family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shadows+Into+Light&display=swap');
+/* Definições globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../../imagens/0c9090a5-9add-4a9f-ad31-e841d2126cb2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Estilo do container do formulário */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #262626;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #ffd607;
+    margin-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Estilo dos labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffd607;
+    font-family: "New Amsterdam";
+}
+
+/* Estilo dos inputs */
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="endereco"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ffd607;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão de envio */
+button[type="submit"] {
+    background-color: #ffd607;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover no botão */
+button[type="submit"]:hover {
+    background-color: #978110;
+}

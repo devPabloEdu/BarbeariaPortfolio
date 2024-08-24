@@ -3,32 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Frijole&family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shadows+Into+Light&display=swap');
 
-
 .new-amsterdam-regular {
     font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-*{
+* {
     margin: 0;
+    box-sizing: border-box;
 }
-nav{
+nav {
     background-color: #d19f0a;
     padding: 10px;
 }
-.navItens{
+.navItens {
     text-decoration: none;
     padding: 20px;
     font-size: 1em;
     color: white;
     font-weight: bold;
-
 }
-.navItens:hover{
+.navItens:hover {
     background-color: #9c7a14;
     text-decoration: underline;
 }
-.logoInicio{
+.logoInicio {
     text-align: center;
     background-image: url(../imagens/0c9090a5-9add-4a9f-ad31-e841d2126cb2.jpeg);
     background-size: cover;
@@ -36,15 +35,15 @@ nav{
     background-attachment: scroll;
     background-position: center;
 }
-.invisivel{
+.invisivel {
     opacity: 0;
 }
-.main-container{
-    background-color:#d19f0a ;
+.main-container {
+    background-color: #d19f0a;
     text-align: center;
     padding: 50px;
 }
-.main-container h1{
+.main-container h1 {
     font-size: 4em;
     color: rgb(255, 255, 255);
     font-family: "Dancing Script", cursive;
@@ -61,13 +60,13 @@ nav{
     text-shadow: #262626 2px 2px 2px;
     font-weight: bold;
 }
-.servicos-container{
+.servicos-container {
     background-color: #262626;
     text-align: center;
     color: #F2CB05;
     padding: 30px;
 }
-.servicos-container h2{
+.servicos-container h2 {
     font-family: "Dancing Script", cursive;
     font-size: 6em;
     padding: 10px;
@@ -82,17 +81,17 @@ nav{
     border: solid #F2B705;
     border-radius: 10px;
 }
-.servicos-container p:hover{
+.servicos-container p:hover {
     background-color: #ffc109;
     color: white;
     text-shadow: #262626 2px 2px 2px;
 }
-.links-container{
+.links-container {
     background-color: #262626;
     text-align: center;
     padding: 20px;
 }
-.links-container h2{
+.links-container h2 {
     font-family: "New Amsterdam", sans-serif;
     font-size: 6em;
     padding: 10px;
@@ -105,24 +104,22 @@ nav{
     font-family: "New Amsterdam", sans-serif;
     color: #F2CB05;
 }
-.imagemCadeira{
+.imagemCadeira {
     border: solid #F2B705;
     background-color: #F2B705;
     border-radius: 50%;
     width: 500px;
     padding: 20px;
 }
-.imagemCadeira:hover{
+.imagemCadeira:hover {
     border: solid #9c7a14;
     background-color: #9c7a14;
     padding-right: 5px;
 }
-.RedesSociais-container{
+.RedesSociais-container {
     padding: 40px;
-    display: flex;
     text-align: center;
     align-items: center;
-    flex-direction: row;
     background-color: #F2B705;
     color: white;
     font-family: "New Amsterdam", sans-serif;
@@ -130,7 +127,19 @@ nav{
     line-height: 2em;
     text-shadow: #262626 2px 2px 2px;
 }
-footer{
+.linktexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+.linkimagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer {
     background-color: #262626;
     color: #F2CB05;
     text-shadow: #262626 2px 2px 2px;
@@ -139,25 +148,25 @@ footer{
     padding: 10px;
 }
 
-.Modelos{
+.Modelos {
     background-color: #262626;
     display: flex;
 }
-.textoCarrosel{
+.textoCarrosel {
     padding: 20px;
     align-items: center;
     text-align: center;
 }
-.textoCarrosel h3{
+.textoCarrosel h3 {
     padding: 40px;
     font-family: "Dancing Script", cursive;
     color: #ffc109;
     font-size: 5.5em;
 }
-.textoCarrosel hr{
+.textoCarrosel hr {
     color: #ffc109;
 }
-.textoCarrosel p{
+.textoCarrosel p {
     padding: 10px;
     line-height: 40px;
     font-size: 2em;
@@ -209,4 +218,392 @@ footer{
 .prev:disabled, .next:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos com largura de tela até 768px (tablets) */
+@media (max-width: 768px) {
+    .main-container h1 {
+        font-size: 3em;
+    }
+
+    .main-container p {
+        font-size: 1.2em;
+    }
+
+    .servicos-container h2 {
+        font-size: 4em;
+    }
+
+    .servicos-container p {
+        font-size: 1.2em;
+    }
+
+    .links-container h2 {
+        font-size: 4em;
+    }
+
+    .links-container p {
+        font-size: 1.5em;
+    }
+
+    .imagemCadeira {
+        width: 300px;
+    }
+
+    .textoCarrosel h3 {
+        font-size: 3em;
+    }
+
+    .textoCarrosel p {
+        font-size: 1.5em;
+    }
+}
+
+/* Para dispositivos com largura de tela até 480px (celulares) */
+@media (max-width: 480px) {
+    .@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Frijole&family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Shadows+Into+Light&display=swap');
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #d19f0a;
+    padding: 10px;
+}
+.navItens {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+.navItens:hover {
+    background-color: #9c7a14;
+    text-decoration: underline;
+}
+.logoInicio {
+    text-align: center;
+    background-image: url(../imagens/0c9090a5-9add-4a9f-ad31-e841d2126cb2.jpeg);
+    background-size: cover;
+    padding: 110px;
+    background-attachment: scroll;
+    background-position: center;
+}
+.invisivel {
+    opacity: 0;
+}
+.main-container {
+    background-color: #d19f0a;
+    text-align: center;
+    padding: 50px;
+}
+.main-container h1 {
+    font-size: 4em;
+    color: rgb(255, 255, 255);
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    font-style: italic;
+    padding: 30px;
+    text-shadow: #262626 2px 2px 2px;
+}
+.main-container p {
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-shadow: #262626 2px 2px 2px;
+    font-weight: bold;
+}
+.servicos-container {
+    background-color: #262626;
+    text-align: center;
+    color: #F2CB05;
+    padding: 30px;
+}
+.servicos-container h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 6em;
+    padding: 10px;
+}
+.servicos-container p {
+    font-size: 1.5em;
+    line-height: 3em;
+    font-weight: bold;
+    padding: 20px;
+    font-family: "Frijole", system-ui;
+    margin: 10px;
+    border: solid #F2B705;
+    border-radius: 10px;
+}
+.servicos-container p:hover {
+    background-color: #ffc109;
+    color: white;
+    text-shadow: #262626 2px 2px 2px;
+}
+.links-container {
+    background-color: #262626;
+    text-align: center;
+    padding: 20px;
+}
+.links-container h2 {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 6em;
+    padding: 10px;
+    color: #F2CB05;
+}
+.links-container p {
+    font-size: 2em;
+    line-height: 2em;
+    padding: 20px;
+    font-family: "New Amsterdam", sans-serif;
+    color: #F2CB05;
+}
+.imagemCadeira {
+    border: solid #F2B705;
+    background-color: #F2B705;
+    border-radius: 50%;
+    width: 500px;
+    padding: 20px;
+}
+.imagemCadeira:hover {
+    border: solid #9c7a14;
+    background-color: #9c7a14;
+    padding-right: 5px;
+}
+.RedesSociais-container {
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    background-color: #F2B705;
+    color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 2em;
+    line-height: 2em;
+    text-shadow: #262626 2px 2px 2px;
+}
+.linktexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+.linkimagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer {
+    background-color: #262626;
+    color: #F2CB05;
+    text-shadow: #262626 2px 2px 2px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.Modelos {
+    background-color: #262626;
+    display: flex;
+}
+.textoCarrosel {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+.textoCarrosel h3 {
+    padding: 40px;
+    font-family: "Dancing Script", cursive;
+    color: #ffc109;
+    font-size: 5.5em;
+}
+.textoCarrosel hr {
+    color: #ffc109;
+}
+.textoCarrosel p {
+    padding: 10px;
+    line-height: 40px;
+    font-size: 2em;
+    color: #F2B705;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 515px;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo das imagens */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Esconde botões quando não estão em uso */
+.prev:disabled, .next:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos com largura de tela até 768px (tablets) */
+@media (max-width: 768px) {
+    .invisivel{
+        display: none;
+    }
+    .main-container h1 {
+        font-size: 3em;
+    }
+
+    .main-container p {
+        font-size: 1.2em;
+    }
+
+    .servicos-container h2 {
+        font-size: 4em;
+    }
+
+    .servicos-container p {
+        font-size: 1.2em;
+    }
+
+    .links-container h2 {
+        font-size: 4em;
+    }
+
+    .links-container p {
+        font-size: 1.5em;
+    }
+
+    .imagemCadeira {
+        width: 300px;
+    }
+
+    .textoCarrosel h3 {
+        font-size: 3em;
+    }
+
+    .textoCarrosel p {
+        font-size: 1.5em;
+    }
+}
+
+/* Para dispositivos com largura de tela até 480px (celulares) */
+@media (max-width: 480px) {
+    .invisivel{
+        display: none;
+    }
+    .main-container h1 {
+        font-size: 2.5em;
+    }
+
+    .main-container p {
+        font-size: 1em;
+    }
+
+    .servicos-container h2 {
+        font-size: 3em;
+    }
+
+    .servicos-container p {
+        font-size: 1em;
+    }
+
+    .links-container h2 {
+        font-size: 3em;
+    }
+
+    .links-container p {
+        font-size: 1.2em;
+    }
+
+    .imagemCadeira {
+        width: 200px;
+    }
+
+    .textoCarrosel h3 {
+        font-size: 2.5em;
+    }
+
+    .textoCarrosel p {
+        font-size: 1.2em;
+    }
+}
+
+    .main-container h1 {
+        font-size: 2.5em;
+    }
+
+    .main-container p {
+        font-size: 1em;
+    }
+
+    .servicos-container h2 {
+        font-size: 3em;
+    }
+
+    .servicos-container p {
+        font-size: 1em;
+    }
+
+    .links-container h2 {
+        font-size: 3em;
+    }
+
+    .links-container p {
+        font-size: 1.2em;
+    }
+
+    .imagemCadeira {
+        width: 200px;
+    }
+
+    .textoCarrosel h3 {
+        font-size: 2.5em;
+    }
+
+    .textoCarrosel p {
+        font-size: 1.2em;
+    }
 }

@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/send-email', (req, res) => {
-    const { name, phone, date, time, email } = req.body;
+    const { name, phone, date, time, endereco } = req.body;
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -25,7 +25,7 @@ app.post('/send-email', (req, res) => {
         from: 'agendamentosbarbearia48@gmail.com',
         to: 'eduardopablo460@gmail.com',
         subject: 'Agendamento',
-        text: `Nome: ${name}\nTelefone: ${phone}\nData do Agendamento: ${date}\nHorário do Agendamento: ${time}\nE-mail: ${email}`
+        text: `Nome: ${name}\nTelefone: ${phone}\nData do Agendamento: ${date}\nHorário do Agendamento: ${time}\nEndereço: ${endereco}`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

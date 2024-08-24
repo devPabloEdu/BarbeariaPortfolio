@@ -5,14 +5,14 @@ document.getElementById('appointmentForm').addEventListener('submit', function(e
     const phone = document.getElementById('phone').value;
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
-    const email = document.getElementById('email').value;
+    const endereco = document.getElementById('endereco').value;
 
     fetch('http://localhost:3001/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ name, phone, date, time, email })
+        body: JSON.stringify({ name, phone, date, time, endereco })
     })
     .then(response => response.text())
     .then(data => {
